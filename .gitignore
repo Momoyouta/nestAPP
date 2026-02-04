@@ -1,0 +1,12 @@
+node_modules/
+.idea/
+.nyc_output/
+coverage/
+dist/
+.DS_Store
+.editorconfig
+/es
+.vscode/
+.claude/
+.claude/*
+.joycode/prompt.json
