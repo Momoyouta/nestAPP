@@ -1,1 +1,7 @@
-[00:00:04.009] Server  LOG      ✓ Ready in 3.3s
+[00:00:04.890] Server  LOG      ✓ Ready in 3.9s
+[00:04:23.947] Server  LOG      ○ Compiling / ...
+[00:06:37.882] Browser LOG     go to/main
+[00:06:40.555] Server  LOG      ○ Compiling /main ...
+[00:06:48.227] Browser LOG     令牌已过期，请重新登录
+[00:06:53.770] Browser ERROR   Warning: [antd: compatible] antd v5 support React is 16 ~ 18. see https://u.ant.design/v5-for-19 for compatible.
+[00:06:56.557] Browser LOG     {"code":200,"data":{"requestId":"be39ff2a-e701-48e4-95b1-8258ca5bd524","userId":"7aaafad8-96e1-4c28-84cf-ea747c2798ca"},"msg":"success"}

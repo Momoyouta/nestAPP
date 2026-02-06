@@ -57,14 +57,20 @@ function MainContent() {
                 message.error(err.data.msg)
             });
     }
+    
+    const alsTest = async () => {
+        await http.get('alsTest')
+            .then(res => {
+                console.log(res)
+            })
+            .catch(err => {
+                console.log(err.data.msg)
+            })
+    }
 
     const items = [
         { name: '我的钱包', color: '#E6F7FF', icon: <WalletOutlined style={{ color: '#1890FF' }} />, onClick: getUserRole },
-        { name: '易商卡', color: '#FFF1EE', icon: <CreditCardOutlined style={{ color: '#F5222D' }} />,
-            onClick: async () => {
-                const res = await http.get(`user/findByIdOne/${2}`).then(res => console.log(res));
-            }
-        },
+        { name: '易商卡', color: '#FFF1EE', icon: <CreditCardOutlined style={{ color: '#F5222D' }} />, onClick: alsTest},
         { name: '开票信息', color: '#F6FFED', icon: <FileTextOutlined style={{ color: '#52C41A' }} />,
             onClick: async () => {
                 const res = await http.post('dto',{id:1,name:"zwr",msg:'hot'}).then(res => console.log(res));
